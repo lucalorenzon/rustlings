@@ -22,6 +22,7 @@ impl PositiveNonzeroInteger {
             v if v < 0 => Err(CreationError::Negative),
             _ => Ok(PositiveNonzeroInteger(value as u64)),
         }
+
     }
 }
 
