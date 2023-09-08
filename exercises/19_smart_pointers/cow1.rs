@@ -70,7 +70,7 @@ mod tests {
         // case the call to `to_mut()` in the abs_all() function returns a
         // reference to the same data as before.
         let slice = vec![-1, 0, 1];
-        let mut input = Cow::from(slice).to_mut();
+        let mut input = Cow::from(slice);
         match abs_all(&mut input) {
             Cow::Owned(_) => Ok(()),
             _ => Err("Expected Owned value")
