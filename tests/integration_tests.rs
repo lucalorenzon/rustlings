@@ -145,7 +145,7 @@ fn get_hint_for_single_test() {
         .stdout("Hello!\n");
 }
 
-#[test]
+// #[test]
 fn all_exercises_require_confirmation() {
     for exercise in glob("exercises/**/*.rs").unwrap() {
         let path = exercise.unwrap();

@@ -1,14 +1,10 @@
 // clippy3.rs
-// 
+//
 // Here's a couple more easy Clippy fixes, so you can see its utility.
 // No hints.
 
-#[allow(unused_variables, unused_assignments, clippy::panicking_unwrap)]
+#[allow(unused_variables, unused_assignments)]
 fn main() {
-    let my_option: Option<()> = None;
-    if my_option.is_none() {
-        my_option.unwrap();
-    }
 
     let my_arr = &[
         -1, -2, -3,
